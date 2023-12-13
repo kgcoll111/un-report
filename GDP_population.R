@@ -52,4 +52,6 @@ head(gapminder_data)
 ggplot(data = gapminder_data) + 
   aes(x = year, y = lifeExp, color = continent, shape = continent) +
   geom_point()
-#comment
+
+ggsave("figures/gdpPercap_lifeExp.png")
+
